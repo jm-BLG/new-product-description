@@ -1,3 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --icon-dimension: 32px;
+
+    @media (width < 1024px) {
+        --icon-dimension: clamp(1.5rem, 1.2727rem + 1.1364vw, 2rem);
+    }
+}
+
 .page-container {
     width: min(1440px, 100%);
     outline: 1px solid red;
@@ -9,6 +25,7 @@
 #lo-prodDesc {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #1E1E20;
+    padding-inline: 16px;
 }
 
 #lo-prodDesc :is(h3, h4, p) {
@@ -18,6 +35,10 @@
 #lo-prodDesc .lo-prodDesc__container {
     width: calc(100% - 100px);
     margin-inline: auto;
+
+    @media (width < 1024px) {
+        width: calc(100% - clamp(0rem, -2.8409rem + 14.2045vw, 6.25rem));
+    }
 }
 
 .lo-prodDesc__intro {
@@ -33,6 +54,7 @@
     align-items: center;
     margin-block-end: 62px;
     padding-block: 48px;
+    padding-inline: 16px;
 }
 
 .lo-prodDesc__introTxt {
@@ -40,16 +62,20 @@
     font-weight: 600;
     line-height: 1.5;
     max-width: 48ch;
-    text-wrap-style: pretty;
+    text-wrap: pretty;
     margin: 0;
 }
 
 .lo-prodDesc__slogan {
     font-size: 48px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.4;
     color: #CB693F;
     margin: 0;
+
+    @media (width < 1024px) {
+        font-size: clamp(2.5rem, 2.2727rem + 1.1364vw, 3rem);
+    }
 }
 
 .lo-prodDesc__sectionHeader {
@@ -64,6 +90,10 @@
     font-size: 28px;
     font-weight: 600;
     line-height: 1;
+
+    @media (width < 1024px) {
+        font-size: clamp(1.25rem, 1.0227rem + 1.1364vw, 1.75rem);
+    }
 }
 
 .lo-prodDesc__sectionBtn {
@@ -72,8 +102,8 @@
     border: none;
     padding: 0;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: var(--icon-dimension);
+    height: var(--icon-dimension);
     position: relative;
 }
 

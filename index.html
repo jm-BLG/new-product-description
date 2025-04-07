@@ -4,11 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
     <title>New product description</title>
 </head>
 
 <body>
+    <div class="page-container">
+        <section id="lo-prodDesc">
+            <header class="lo-prodDesc__intro lo-prodDesc__container">
+                <p class="lo-prodDesc__introTxt">Linelo Layla</p>
+                <h2 class="lo-prodDesc__slogan">Wasz pierwszy i jedyny wózek</h2>
+                <p class="lo-prodDesc__introTxt">Wygodny tak dla noworodków, jak i dla 4-latków; z poszerzoną gondolą i
+                    wydłużonym siedziskiem. Idealny, gdy szukacie uniwersalnego i praktycznego wózka na lata.</p>
+            </header>
+            <div class="lo-prodDesc__sectionHeader lo-prodDesc__container">
+                <h3 class="lo-prodDesc__sectionTitle">Cechy szczególne</h3>
+                <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-featuresBtn" aria-expanded="true"
+                    aria-controls="product-featuresGrid" open></button>
+            </div>
+            <div class="lo-prodDesc__grid lo-prodDesc__container js-prodDescGrid" id="product-featuresGrid"
+                aria-hidden="false" role="region" aria-labelledby="product-featuresBtn" open>
+                <p>Pierwszy otwarty grid</p>
+            </div>
+            <div class="lo-prodDesc__sectionHeader lo-prodDesc__container">
+                <h3 class="lo-prodDesc__sectionTitle">Szczegóły produktu</h3>
+                <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-detailBtn" aria-expanded="false"
+                    aria-controls="product-detailsGrid"></button>
+            </div>
+            <div class="lo-prodDesc__grid lo-prodDesc__container js-prodDescGrid" id="product-detailsGrid"
+                aria-hidden="true" role="region" aria-labelledby="product-detailBtn">
+                <div class="lo-prodDesc__detailItem">
+                    <div class="lo-prodDesc__iconWrapper" height="88px" width="88px">
+                        <img src="/img/ico-2w1.png" alt="Ikona 2w1" class="lo-prodDesc__detailIcon">
+                    </div>
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Rozwiązania smart ułatwiają każdy spacer</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Codzienna obsługa jest prostsza! Np. przy uchwycie
+                            znajdziesz
+                            haczyki na torbę, pokrowiec gondoli ma podwójny zamek, a kosz – praktyczny organizer.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <div class="lo-prodDesc__iconWrapper" height="88px" width="88px">
+                        <img src="/img/ico-belts.png" alt="Ikona pasy" class="lo-prodDesc__detailIcon">
+                    </div>
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Błyskawiczne przygotowanie do podróży</h4>
+                        <p class="lo-prodDesc__gridItemDesc">5-punktowe pasy z nakładkami zapobiegającymi obtarciom
+                            szybko
+                            zapina się na magnetyczną klamrę. To każdorazowa oszczędność czasu i nerwów.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <div class="lo-prodDesc__iconWrapper" height="88px" width="88px">
+                        <img src="/img/ico-cooling.png" alt="Ikona chłodzenie" class="lo-prodDesc__detailIcon">
+                    </div>
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Latem przewiewnie i bez pocenia</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Regulowana magnesami wentylacja 3D i oddychający materacyk
+                            AiryDots zapewniają optymalny przepływ powietrza, także pod pleckami. Zapobiegając poceniu,
+                            zapobiegamy potówkom.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <div class="lo-prodDesc__iconWrapper" height="88px" width="88px">
+                        <img src="/img/ico-2w1.png" alt="Ikona 2w1" class="lo-prodDesc__detailIcon">
+                    </div>
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Obsługujesz 1 ręką</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Przyciski funkcyjne „zapamiętują” ostatnie położenie,
+                            dzięki
+                            czemu 1 ręka wystarczy, by wyjąć gondolę, przełożyć siedzisko czy rozłożyć budkę.
+                            Ograniczenie
+                            zbędnych ruchów minimalizuje ryzyko wybudzenia dziecka. </p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <div class="lo-prodDesc__iconWrapper" height="88px" width="88px">
+                        <img src="/img/ico-belts.png" alt="Ikona pasy" class="lo-prodDesc__detailIcon">
+                    </div>
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Łatwiej zasnąć</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Oparcie w spacerówce jest regulowane aż do pozycji „na
+                            płasko”.
+                            To idealna pozycja do drzemki, co pomaga przyspieszyć zasypianie.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <div class="lo-prodDesc__iconWrapper" height="88px" width="88px">
+                        <img src="/img/ico-cooling.png" alt="Ikona chłodzenie" class="lo-prodDesc__detailIcon">
+                    </div>
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Wjedziecie wszędzie</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Zwrotny w mieście, znakomicie radzi sobie na polnej drodze
+                            czy
+                            w lesie, bo ma duże, gumowe koła all-terrain z głębokim bieżnikiem i podwójną amortyzację. 
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="lo-prodDesc__sectionHeader lo-prodDesc__container">
+                <h3 class="lo-prodDesc__sectionTitle">Dodatkowo w zestawie</h3>
+                <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-setsBtn" aria-expanded="false"
+                    aria-controls="product-setsGrid"></button>
+            </div>
+            <div class="lo-prodDesc__grid lo-prodDesc__container js-prodDescGrid" id="product-setsGrid"
+                aria-hidden="true" role="region" aria-labelledby="product-setsBtn">
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-1.png" alt="Fotelik Astrid i-Size" class="lo-prodDesc__setImage"
+                        width="259px" height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Fotelik Astrid i-Size</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Nosidło Astrid i-Size z certyficatem ADAC można wpiąć w
+                            stelaż
+                            wózka! Gdy podczas podróży autem maluszek zaśnie, można go przetransportować dalej bez
+                            wybudzania. </p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-2.png" alt="Piankowy materac" class="lo-prodDesc__setImage" width="259px"
+                        height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Piankowy materac </h4>
+                        <p class="lo-prodDesc__gridItemDesc">Oddychający (technologia AiryDots), odpowiednio twardy,
+                            zapewnia optymalne podparcie kręgosłupa dziecka. Wykonany z pianki T25. </p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-3.png" alt="Torba dla rodzica" class="lo-prodDesc__setImage" width="259px"
+                        height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Torba dla rodzica</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Smoczki, chusteczki, akcesoria... Wszystko masz pod ręką i
+                            w
+                            najlepszym porządku. </p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-4.png" alt="Folia przeciwdeszczowa" class="lo-prodDesc__setImage"
+                        width="259px" height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Folia przeciwdeszczowa</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Zakładana na gondolę i spacerówkę, skutecznie chroni przed
+                            deszczem i śniegiem.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-5.png" alt="Adaptery do gondoli i fotelika" class="lo-prodDesc__setImage"
+                        width="259px" height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Adaptery do gondoli i fotelika</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Decydujesz, czy gondola ma być wyżej, czy niżej. To wygodny
+                            dostęp do dziecka i brak bólu pleców. </p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-6.png" alt="Moskitiera" class="lo-prodDesc__setImage" width="259px"
+                        height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Moskitiera</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Insekty nie mają dostępu do dziecka, chronionego przez
+                            przewiewną siatkę. </p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-7.png" alt="Wkładka spacerówki" class="lo-prodDesc__setImage" width="259px"
+                        height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Wkładka spacerówki</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Adjustable to 5 different positions for extra comfort
+                            whether
+                            playing or napping. You can also fold it away for when your toddler no longer needs it.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-8.png" alt="Ocieplacz na nóżki" class="lo-prodDesc__setImage" width="259px"
+                        height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Ocieplacz na nóżki</h4>
+                        <p class="lo-prodDesc__gridItemDesc">Features high quality fabric and extra padded cushioning
+                            for
+                            your growing baby’s comfort.</p>
+                    </div>
+                </div>
+                <div class="lo-prodDesc__detailItem">
+                    <img src="/img/set-img-9.png" alt="Uchwyt na kubek" class="lo-prodDesc__setImage" width="259px"
+                        height="186px" loading="lazy">
+                    <div class="lo-prodDesc__gridItemBody">
+                        <h4 class="lo-prodDesc__gridItemTitle">Uchwyt na kubek </h4>
+                        <p class="lo-prodDesc__gridItemDesc">Bo zasługujesz na gorącą kawę podczas spaceru. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>

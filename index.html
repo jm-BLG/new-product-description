@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="/swiper-bundle.min.js" defer></script>
     <script src="/script.js" defer></script>
     <title>New product description</title>
 </head>
@@ -28,9 +29,87 @@
                 <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-featuresBtn" aria-expanded="true"
                     aria-controls="product-featuresGrid" open></button>
             </div>
-            <div class="lo-prodDesc__grid lo-prodDesc__container js-prodDescGrid" id="product-featuresGrid"
-                aria-hidden="false" role="region" aria-labelledby="product-featuresBtn" open>
-                <p>Pierwszy otwarty grid</p>
+            <div class="lo-prodDesc__container js-prodDescGrid" id="product-featuresGrid" aria-hidden="false"
+                role="region" aria-labelledby="product-featuresBtn" open>
+                <div class="lo-prodDesc__grid swiper swiper-featured">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="lo-prodDesc__detailItem">
+                                <img src="/img/image cecha-1.png" alt="Wjedziecie wszędzie"
+                                    class="lo-prodDesc__featureImage" width="259px" height="186px" loading="lazy">
+                                <div class="lo-prodDesc__gridItemBody">
+                                    <h4 class="lo-prodDesc__gridItemTitle">Wjedziecie wszędzie</h4>
+                                    <p class="lo-prodDesc__gridItemDesc">Gondola składa się na płasko, co oszczędza
+                                        miejsce w
+                                        domu,
+                                        a spacerówkę można szybko i wygodnie złożyć także wtedy, gdy znajduje się w niej
+                                        siedzisko –
+                                        nie trzeba go zdejmować!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="lo-prodDesc__detailItem">
+                                <img src="/img/image cecha-2.png" alt="Dopasowuje się do wzrostu rodzica"
+                                    class="lo-prodDesc__featureImage" width="259px" height="186px" loading="lazy">
+                                <div class="lo-prodDesc__gridItemBody">
+                                    <h4 class="lo-prodDesc__gridItemTitle">Dopasowuje się do wzrostu rodzica</h4>
+                                    <p class="lo-prodDesc__gridItemDesc">Gondolę można umieścić niżej lub wyżej, za
+                                        pomocą
+                                        adapterów. To pomocne, gdy rodzice różnią się wzrostem. Znaczne udogodnienie dla
+                                        wyższych
+                                        opiekunów i ich pleców.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="lo-prodDesc__detailItem">
+                                <img src="/img/image cecha-3.png" alt="Torba dla rodzica"
+                                    class="lo-prodDesc__featureImage" width="259px" height="186px" loading="lazy">
+                                <div class="lo-prodDesc__gridItemBody">
+                                    <h4 class="lo-prodDesc__gridItemTitle">Wjedziecie wszędzie</h4>
+                                    <p class="lo-prodDesc__gridItemDesc">Zwrotny w mieście, znakomicie radzi sobie na
+                                        polnej
+                                        drodze
+                                        czy w lesie, bo ma duże, gumowe koła all-terrain z głębokim bieżnikiem i
+                                        podwójną
+                                        amortyzację.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="lo-prodDesc__detailItem">
+                                <img src="/img/image cecha-1.png" alt="Wjedziecie wszędzie"
+                                    class="lo-prodDesc__featureImage" width="259px" height="186px" loading="lazy">
+                                <div class="lo-prodDesc__gridItemBody">
+                                    <h4 class="lo-prodDesc__gridItemTitle">Wjedziecie wszędzie</h4>
+                                    <p class="lo-prodDesc__gridItemDesc">Gondola składa się na płasko, co oszczędza
+                                        miejsce w
+                                        domu,
+                                        a spacerówkę można szybko i wygodnie złożyć także wtedy, gdy znajduje się w niej
+                                        siedzisko –
+                                        nie trzeba go zdejmować!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lo-prodDesc-nav">
+                        <div class="lo-prodDesc-nav__btnWrapper">
+                            <button class="lo-prodDesc-nav__navBtn lo-prodDesc-nav__navBtn--prev">
+                                <img src="/img/nav-arrow-prev.png" alt="">
+                            </button>
+
+                        </div>
+                        <div class="lo-prodDesc-nav__pagginationWrapper">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="lo-prodDesc-nav__btnWrapper">
+                            <button class="lo-prodDesc-nav__navBtn lo-prodDesc-nav__navBtn--next">
+                                <img src="/img/nav-arrow-next.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="lo-prodDesc__sectionHeader lo-prodDesc__container">
                 <h3 class="lo-prodDesc__sectionTitle">Szczegóły produktu</h3>

@@ -131,33 +131,66 @@ const swipers = () => {
         },
     })
 
-    const swiperExxperts = new Swiper(".swiper-experts", {
-
+    const swiperDetails = new Swiper(".swiper-details", {
         updateOnWindowResize: true,
         grabCursor: true,
         slidesPerView: 1,
-        spaceBetween: 20,
-        // spaceBetween: 10,
+        spaceBetween: 10,
+        pagination: {
+            enabled: true,
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+            bulletActiveClass: "lo-prodDesc-swiper-active-bullet",
+        },
         navigation: {
             enabled: true,
-            nextEl: ".lo-about-us-experts__navBtn--next",
-            prevEl: ".lo-about-us-experts__navBtn--prev",
+            nextEl: ".lo-prodDesc-nav__navBtn--next",
+            prevEl: ".lo-prodDesc-nav__navBtn--prev",
         },
         breakpoints: {
+            579: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: true,
+                },
+                navigation: {
+                    enabled: true,
+                },
+            },
             769: {
-                slidesPerView: 1,
-                spaceBetween: 0,
+                slidesPerView: 2,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: false,
+                },
                 navigation: {
                     enabled: false,
                 },
                 grid: {
                     fill: "row",
-                    rows: 4,
+                    rows: 3,
+                },
+            },
+            1185: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: false,
+                },
+                navigation: {
+                    enabled: false,
+                },
+                grid: {
+                    fill: "row",
+                    rows: 2,
                 },
             },
         },
-
     })
+
+
 
 }
 

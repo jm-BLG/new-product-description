@@ -138,7 +138,7 @@ html {
 }
 
 .lo-prodDesc__grid {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
     row-gap: 55px;
     column-gap: 55px;
@@ -156,8 +156,12 @@ html {
 }
 
 .lo-prodDesc__container[open] .lo-prodDesc__grid {
-    max-height: 1500px;
-    padding-block-end: 44px;
+    max-height: 1800px;
+    padding-block-end: 55px;
+
+    @media (width < 768px) {
+        padding-block-end: 40px;
+    }
 }
 
 .lo-prodDesc__detailItem {
@@ -219,6 +223,7 @@ html {
     padding: 8px;
     width: fit-content;
     margin-inline: auto;
+    margin-block-start: 25px;
 
     @media (width > 768px) {
         display: none;
@@ -261,3 +266,9 @@ html {
     width: 14px;
     height: 14px;
 }
+
+/* .swiper-details .swiper-wrapper {
+    @media (width > 768px) {
+        row-gap: 45px;
+    }
+} */

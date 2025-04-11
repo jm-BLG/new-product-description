@@ -8,10 +8,15 @@ const toggleProdDesc = () => {
             const gridId = btn.getAttribute("aria-controls");
             const grid = document.getElementById(gridId);
 
-            const isExpanded = grid.hasAttribute("open");
+            const isExpanded = grid.classList.contains("expanded");
 
-            grid.toggleAttribute("open");
-            btn.toggleAttribute("open");
+
+            // const isExpanded = grid.hasAttribute("open");
+            // grid.toggleAttribute("open");
+            // btn.toggleAttribute("open");
+
+            grid.classList.toggle("expanded");
+            btn.classList.toggle("expanded");
 
             btn.setAttribute("aria-expanded", !isExpanded);
             grid.setAttribute("aria-hidden", isExpanded);

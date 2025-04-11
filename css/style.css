@@ -192,7 +192,11 @@ html {
 }
 
 .lo-prodDesc__iconWrapper {
-    padding-inline-start: 20px;
+    padding-inline-start: 18px;
+}
+
+.lo-prodDesc__detailIcon {
+    object-fit: contain;
 }
 
 .lo-prodDesc__gridItemBody {

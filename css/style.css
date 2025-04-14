@@ -113,7 +113,7 @@ html {
     content: "";
     position: absolute;
     background: #1E1E20;
-    transition: all 850ms ease-in-out;
+    transition: all 650ms ease-in-out;
 }
 
 .lo-prodDesc__sectionBtn::before {
@@ -149,14 +149,16 @@ html {
     column-gap: 55px;
     padding-block-end: 0;
     max-height: 0;
+    opacity: 0;
     margin-block-end: 55px;
     border-block-end: 1px solid #D2D2D2;
     overflow: hidden;
-    transition: all 850ms ease-in-out;
+    transition: all 950ms ease-in;
 }
 
 .lo-prodDesc__grid.expanded {
     max-height: 1500px;
+
     padding-block-end: 44px;
 }
 
@@ -167,6 +169,7 @@ html {
 
 .lo-prodDesc__container.expanded .lo-prodDesc__grid {
     max-height: 1800px;
+    opacity: 1;
     padding-block-end: 55px;
 
     @media (width < 768px) {

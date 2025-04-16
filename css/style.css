@@ -120,7 +120,7 @@ html {
     content: "";
     position: absolute;
     background: #1E1E20;
-    transition: all 450ms ease-in;
+    transition: all 320ms ease-in;
 }
 
 .lo-prodDesc__sectionBtn::before {
@@ -161,9 +161,9 @@ html {
     border-block-end: 1px solid #D2D2D2;
     overflow: hidden;
     transition:
-        max-height 800ms ease-out,
-        opacity 700ms ease-in 300ms,
-        padding-block-end 800ms ease-out;
+        max-height 700ms ease-out,
+        opacity 600ms ease-in 300ms,
+        padding-block-end 700ms ease-out;
 }
 
 /* .lo-prodDesc__grid.expanded {

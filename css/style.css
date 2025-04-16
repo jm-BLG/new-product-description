@@ -22,6 +22,13 @@ html {
     background: #F5F2F0;
 }
 
+.top-page-section-mockup {
+    width: calc(100% - 100px);
+    margin-inline: auto;
+    margin-block-end: 65px;
+    padding-inline: 16px;
+}
+
 #lo-prodDesc {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #1E1E20;
@@ -113,7 +120,7 @@ html {
     content: "";
     position: absolute;
     background: #1E1E20;
-    transition: all 650ms ease-in-out;
+    transition: all 450ms ease-in;
 }
 
 .lo-prodDesc__sectionBtn::before {
@@ -153,14 +160,16 @@ html {
     margin-block-end: 55px;
     border-block-end: 1px solid #D2D2D2;
     overflow: hidden;
-    transition: all 950ms ease-in;
+    transition:
+        max-height 800ms ease-out,
+        opacity 700ms ease-in 300ms,
+        padding-block-end 800ms ease-out;
 }
 
-.lo-prodDesc__grid.expanded {
-    max-height: 1500px;
-
+/* .lo-prodDesc__grid.expanded {
+    max-height: 1800px;
     padding-block-end: 44px;
-}
+} */
 
 /* .lo-prodDesc__grid[open] {
     max-height: 1500px;
@@ -232,9 +241,11 @@ html {
 
 .lo-prodDesc__featureImage {
     width: 100%;
+    max-width: 490px;
     height: auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 5/4;
     object-position: left top;
+    border-radius: 12px;
 }
 
 

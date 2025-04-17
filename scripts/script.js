@@ -198,6 +198,7 @@ const videoPlay = () => {
     const startPoint = windowHeigh - 150;
 
     if (videoGridRect < startPoint) {
+        window.removeEventListener("scroll", videoPlay);
         const video = document.querySelectorAll(".js-featureVideo");
         const swiperFeatures = document.querySelector(".swiper-featured")?.swiper;
 
@@ -239,6 +240,6 @@ const videoPlay = () => {
     };
 };
 
-window.addEventListener("scroll", videoPlay, { once: true });
+window.addEventListener("scroll", videoPlay);
 videoPlay();
 

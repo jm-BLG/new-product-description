@@ -1,6 +1,6 @@
 const productGrid = document.querySelectorAll(".js-prodDescGrid");
+console.log(productGrid);
 const productBtn = document.querySelectorAll(".js-prodDescBtn");
-
 
 const toggleProdDesc = () => {
     productBtn.forEach(btn => {
@@ -191,3 +191,54 @@ const swipers = () => {
 }
 
 swipers();
+
+const videoPlay = () => {
+    const videoGridRect = productGrid[0].getBoundingClientRect().top;
+    const windowHeigh = window.innerHeight;
+    const startPoint = windowHeigh - 150;
+
+    if (videoGridRect < startPoint) {
+        const video = document.querySelectorAll(".js-featureVideo");
+        const swiperFeatures = document.querySelector(".swiper-featured")?.swiper;
+
+        const videoArray = Array.from(video);
+        const playSequentially = (index) => {
+            if (index >= videoArray.length) {
+                // return;
+                if (swiperFeatures) {
+                    swiperFeatures.slideTo(0);
+                }
+
+                setTimeout(() => playSequentially(0), 500);
+                return;
+            }
+
+
+            const currentVideo = videoArray[index];
+
+            currentVideo.addEventListener("ended", () => {
+                playSequentially(index + 1);
+                // swiperFeatures.slideTo(index + 1);
+                if (swiperFeatures && index < videoArray.length - 1) {
+                    swiperFeatures.slideTo(index + 1);
+                }
+            }, { once: true });
+
+
+            const intervalId = setInterval(() => {
+                currentVideo.play()
+                    .then(() => {
+                        clearInterval(intervalId);
+                    })
+                    .catch(err => {
+                        console.log("Failed to play video:", err);
+                    });
+            }, 300);
+        }
+        playSequentially(0);
+    };
+};
+
+window.addEventListener("scroll", videoPlay, { once: true });
+videoPlay();
+

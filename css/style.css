@@ -309,6 +309,10 @@ html {
     /* background:#ffffff85; */
     /* backdrop-filter: blur(2px); */
     transition: all 350ms ease-in-out;
+
+    @media (width <=768px) {
+        display: none;
+    }
 }
 
 .lo-prodDesc-navDesktop:hover {

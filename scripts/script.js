@@ -69,6 +69,52 @@ const swipers = () => {
         },
     })
 
+    // Test slider
+    const swiperFeatures2 = new Swiper(".swiper-featured2", {
+        updateOnWindowResize: true,
+        grabCursor: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            enabled: true,
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+            bulletActiveClass: "lo-prodDesc-swiper-active-bullet",
+        },
+        navigation: {
+            enabled: true,
+            nextEl: ".lo-prodDesc-nav__navBtn--next",
+            prevEl: ".lo-prodDesc-nav__navBtn--prev",
+        },
+        breakpoints: {
+            579: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: true,
+                },
+                navigation: {
+                    enabled: true,
+                },
+            },
+            769: {
+                slidesPerView: 2.6,
+                spaceBetween: 20,
+                pagination: {
+                    enabled: false,
+                },
+                navigation: {
+                    enabled: true,
+                },
+            },
+        },
+    })
+
+
+
+    // End
+
     const swiperDetails = new Swiper(".swiper-details", {
         updateOnWindowResize: true,
         grabCursor: true,
@@ -243,3 +289,23 @@ const videoPlay = () => {
 window.addEventListener("scroll", videoPlay);
 videoPlay();
 
+
+const videoPlayBtn = () => {
+    const videoPlayBtn = document.querySelectorAll(".js-featureVideoBtn");
+    const video = document.querySelectorAll(".js-featureVideo2");
+
+    videoPlayBtn.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            video[index].play();
+            // btn.style.display = "none";
+            btn.classList.add("lo-prodDesc__videoBtn--hidden")
+
+            video[index].addEventListener("ended", () => {
+                // btn.style.display = "block";
+                btn.classList.remove("lo-prodDesc__videoBtn--hidden")
+            });
+        });
+    });
+}
+
+videoPlayBtn();

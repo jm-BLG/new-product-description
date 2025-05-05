@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/swiper-bundle.min.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
     <title>New product description</title>
 </head>
 
 <body>
-    <div class="page-container">
+    <div class="page-container product-descritpio-test-container">
         <!-- Top page section mockup-->
         <div class="top-page-section-mockup">
             <img src="img/top-page-section.jpg" alt="">
@@ -43,7 +44,9 @@
                             <div class="lo-prodDesc__detailItem">
                                 <video class="lo-prodDesc__featureImage js-featureVideo" muted width="490" height="392"
                                     playsinline poster="img/image cecha-1-1.png" loading="lazy" preload="none">
-                                    <source src="img/LO_JulieOne_BarierkaOchronna_1.mp4" type="video/mp4">
+                                    <source
+                                        src="https://iframe.mediadelivery.net/play/413190/c64af3b2-df70-4140-8a53-b3a9eb9ee4ff"
+                                        type="video/mp4">
                                 </video>
                                 <!-- <img src="img/image cecha-1.png" alt="Wjedziecie wszędzie"
                                     class="lo-prodDesc__featureImage" width="259" height="186" loading="lazy"> -->
@@ -163,8 +166,14 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="lo-prodDesc__detailItem">
-                                <div class="lo-prodDesc__videoWrapper">
-                                    <video class="lo-prodDesc__featureVideo js-featureVideo2" muted width="490"
+                                <div class="lo-prodDesc__videoWrapper" id="stream-player">
+                                    <div style="position:relative;padding-top:56.25%;"><iframe
+                                            src="https://iframe.mediadelivery.net/embed/413190/869cd701-8ca2-46f7-9e29-fb8db2dcdc57?autoplay=false&loop=false&muted=true&preload=false&responsive=true"
+                                            loading="lazy"
+                                            style="border:0;position:absolute;top:0;height:100%;width:100%;"
+                                            allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                                            allowfullscreen="true"></iframe></div>
+                                    <!-- <video class="lo-prodDesc__featureVideo js-featureVideo2" muted width="490"
                                         height="392" playsinline poster="img/image cecha-1-1.png" loading="lazy"
                                         preload="none">
                                         <source src="img/LO_JulieOne_BarierkaOchronna_1-2mb.mp4" type="video/mp4">
@@ -190,7 +199,7 @@
                                                 </defs>
                                             </svg>
                                         </button>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="lo-prodDesc__gridItemBody">
                                     <h4 class="lo-prodDesc__gridItemTitle">Wjedziecie wszędzie (2MB)</h4>

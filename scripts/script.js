@@ -73,6 +73,11 @@ const swipers = () => {
     const swiperFeatures2 = new Swiper(".swiper-featured2", {
         updateOnWindowResize: true,
         grabCursor: true,
+        preventClicksPropagation: false,
+        preventClicks: false,
+        noSwiping: false,
+        nested: true,
+        touchStartPreventDefault: false,
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
@@ -309,3 +314,21 @@ const videoPlayBtn = () => {
 }
 
 videoPlayBtn();
+
+const player = Stream(document.getElementById('stream-player'));
+player.addEventListener('play', () => {
+    console.log('playing!');
+});
+player.play().catch(() => {
+    console.log('playback failed, muting to try again');
+    player.muted = true;
+    player.play();
+});
+
+const videoPlayCF = () => {
+    const playBtn = document.querySelectorAll(".js-videoPlayBtn2");
+    playBtn.addEventListener("click", () => {
+        player.play()
+    })
+
+}

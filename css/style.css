@@ -120,21 +120,31 @@ html {
     border: none;
     padding: 0;
     cursor: pointer;
+    width: 100%;
+    height: 32px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lo-prodDesc__sectionBtnIcon{
+    display: block;
+    position: relative;
     width: var(--icon-dimension);
     height: var(--icon-dimension);
-    position: relative;
 }
 
 
-.lo-prodDesc__sectionBtn::before,
-.lo-prodDesc__sectionBtn::after {
+.lo-prodDesc__sectionBtnIcon:before,
+.lo-prodDesc__sectionBtnIcon:after {
     content: "";
     position: absolute;
     background: #1E1E20;
     transition: all 320ms ease-in;
 }
 
-.lo-prodDesc__sectionBtn::before {
+.lo-prodDesc__sectionBtnIcon::before {
     width: 100%;
     height: 3px;
     top: 50%;
@@ -142,7 +152,7 @@ html {
     transform: translateY(-50%);
 }
 
-.lo-prodDesc__sectionBtn::after {
+.lo-prodDesc__sectionBtnIcon::after {
     width: 3px;
     height: 100%;
     top: 0;
@@ -150,7 +160,7 @@ html {
     transform: translateX(-50%);
 }
 
-.lo-prodDesc__sectionBtn.expanded.lo-prodDesc__sectionBtn::after {
+.lo-prodDesc__sectionBtn.expanded .lo-prodDesc__sectionBtnIcon::after {
     transform: translateX(-50%) rotate(90deg);
     opacity: 0;
 }

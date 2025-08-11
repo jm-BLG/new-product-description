@@ -423,3 +423,43 @@ html {
         row-gap: 45px;
     }
 } */
+
+
+/* Awards */
+
+#product-awardGrid#product-awardGrid .lo-product-awards__item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background: #FCF8F1;
+    padding: 25px;
+    border: 1px solid #D2D2D2;
+    border-radius: 25px;
+    color: #000;
+}
+
+#product-awardGrid .lo-product-awards__awardLogo{
+    flex-basis: 25%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+#lo-prodDesc .lo-product-awards__img{
+    width: 100%;
+    max-width: 170px;
+    min-width: 80px;
+}
+
+#product-awardGrid .lo-prodDesc__gridItemDesc--awardTitle{
+    margin-block-end: 8px;
+}
+
+#product-awardGrid .lo-prodDesc__gridItemDesc--award{
+    font-size: 15px;
+}
+
+#product-awardGrid .lo-prodDesc__gridItemDesc--award:first-of-type{
+    margin-block-end: 5px;
+}

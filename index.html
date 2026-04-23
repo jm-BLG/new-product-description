@@ -389,19 +389,50 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lo-prodDesc-navDesktop lo-prodDesc-navDesktop--prev">
-
+                    <div class="lo-prodDesc-navDesktop lo-prodDesc-navDesktop--prev js-prodDescSliderNav">
                         <button class="lo-prodDesc-nav__navBtn lo-prodDesc-nav__navBtn--prev"
                             aria-label="Previous slide">
-                            <img src="img/arrow-left.png" alt="Previous slide arrow">
+                            <svg width="31" height="18" viewbox="0 0 31 18" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_128_20_left)">
+                                    <path
+                                        d="M2.70077 9.85586H29.5964C30.0808 9.85586 30.4717 9.47549 30.4717 9.00416C30.4717 8.53283 30.0808 8.15247 29.5964 8.15247H2.70077C2.21641 8.15247 1.82551 8.53283 1.82551 9.00416C1.82551 9.47549 2.21641 9.85586 2.70077 9.85586Z">
+                                    </path>
+                                    <path
+                                        d="M14.7168 17.2151C14.9802 16.8182 14.8527 16.289 14.4449 16.0327L3.10031 9.00413L14.4449 1.97558C14.8527 1.71925 14.9802 1.19004 14.7168 0.793133C14.4534 0.396226 13.9095 0.280462 13.5016 0.528528L0.992821 8.27647C0.737873 8.43358 0.584949 8.70645 0.584949 8.99586C0.584949 9.28528 0.737873 9.55815 0.992821 9.71526L13.5016 17.4632C13.6461 17.5542 13.816 17.5955 13.9775 17.5955C14.2664 17.5955 14.5553 17.4549 14.7168 17.1986V17.2151Z">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_128_20_left">
+                                        <rect width="29.8868" height="17.2075" fill="#ffffff"
+                                            transform="translate(0.52832 0.39624)"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg>
                         </button>
-
                     </div>
-                    <div class="lo-prodDesc-navDesktop lo-prodDesc-navDesktop--next">
+                    <div class="lo-prodDesc-navDesktop lo-prodDesc-navDesktop--next js-prodDescSliderNav">
                         <button class="lo-prodDesc-nav__navBtn lo-prodDesc-nav__navBtn--next" aria-label="Next slide">
-                            <img src="img/arrow-right.png" alt="Next slide arrow">
+                            <svg width="31" height="18" viewbox="0 0 31 18" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_128_20)">
+                                    <path
+                                        d="M28.2992 9.85586H1.40359C0.91922 9.85586 0.52832 9.47549 0.52832 9.00416C0.52832 8.53283 0.91922 8.15247 1.40359 8.15247H28.2992C28.7835 8.15247 29.1744 8.53283 29.1744 9.00416C29.1744 9.47549 28.7835 9.85586 28.2992 9.85586Z">
+                                    </path>
+                                    <path
+                                        d="M16.2832 17.2151C16.0198 16.8182 16.1473 16.289 16.5551 16.0327L27.8997 9.00413L16.5551 1.97558C16.1473 1.71925 16.0198 1.19004 16.2832 0.793133C16.5466 0.396226 17.0905 0.280462 17.4984 0.528528L30.0072 8.27647C30.2621 8.43358 30.4151 8.70645 30.4151 8.99586C30.4151 9.28528 30.2621 9.55815 30.0072 9.71526L17.4984 17.4632C17.3539 17.5542 17.184 17.5955 17.0225 17.5955C16.7336 17.5955 16.4447 17.4549 16.2832 17.1986V17.2151Z">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_128_20">
+                                        <rect width="29.8868" height="17.2075" fill="#ffffff"
+                                            transform="translate(0.52832 0.39624)"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg>
                         </button>
                     </div>
+
 
                     <div class="lo-prodDesc-nav">
                         <div class="lo-prodDesc-nav__btnWrapper">
@@ -434,7 +465,7 @@
 
                 <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-detailBtn" aria-expanded="false"
                     aria-controls="product-detailsGrid">
-                    <h3 class="lo-prodDesc__sectionTitle">Szczegóły produktu</h3>
+                    <span class="lo-prodDesc__sectionTitle">Szczegóły produktu</span>
                     <span class="lo-prodDesc__sectionBtnIcon"></span>
                 </button>
             </div>
@@ -570,7 +601,7 @@
 
                 <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-setsBtn" aria-expanded="false"
                     aria-controls="product-setsGrid">
-                    <h3 class="lo-prodDesc__sectionTitle">Dodatkowo w zestawie</h3>
+                    <span class="lo-prodDesc__sectionTitle">Dodatkowo w zestawie</span>
                     <span class="lo-prodDesc__sectionBtnIcon"></span>
                 </button>
             </div>
@@ -720,6 +751,78 @@
                     </div>
                 </div>
             </div>
+
+            <div class="lo-prodDesc__sectionHeader lo-prodDesc__container">
+                <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-producerBtn" aria-expanded="false"
+                    aria-controls="product-producerInfo">
+                    <span class="lo-prodDesc__sectionTitle">Údaje o výrobcovi</span>
+                    <span class="lo-prodDesc__sectionBtnIcon"></span>
+                </button>
+            </div>
+            <div class="lo-prodDesc__container js-prodDescGrid" id="product-producerInfo" aria-hidden="true"
+                role="region" aria-labelledby="product-producerBtn">
+                <div class="lo-prodDesc__grid">
+                    <div class="lo-prodDesc-producer">
+                        <div class="lo-prodDesc-producerItem">
+                            <div class="lo-prodDesc-producer__title">Dovozca</div>
+                            <div>BrandLine Group Sp. z o.o.</div>
+                            <div>A. Kręglewskiego 1</div>
+                            <div>61-248 Poznań, Polska</div>
+                        </div>
+                        <div class="lo-prodDesc-producerItem">
+                            <div class="lo-prodDesc-producer__title">Výrobca</div>
+                            <div>Shenzhen AOJ Medical Technology Co., Ltd.</div>
+                            <div>Room 301&4F, Block A, Building A, Jingfa Intelligent</div>
+                            <div>Manufacturing Park, Xiaweiyuan, Gushu Community, Xixiang Street,</div>
+                            <div>Bao'an District, 518126, Shenzhen, P.R. China</div>
+                        </div>
+                        <div class="lo-prodDesc-producerItem">
+                            <div class="lo-prodDesc-producer__title">EU REP</div>
+                            <div>Share Info GmbH</div>
+                            <div>Am Schulzentrum 12,</div>
+                            <div>41564 Kaarst, Germany</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="lo-prodDesc" class="js-productDescription">
+                <div class="lo-prodDesc__sectionHeader lo-prodDesc__container">
+                    <button class="lo-prodDesc__sectionBtn js-prodDescBtn" id="product-producerBtn"
+                        aria-expanded="false" aria-controls="product-producerInfo">
+                        <span class="lo-prodDesc__sectionTitle">Údaje o výrobcovi</span>
+                        <span class="lo-prodDesc__sectionBtnIcon"></span>
+                    </button>
+                </div>
+                <div class="lo-prodDesc__container js-prodDescGrid" id="product-producerInfo" aria-hidden="true"
+                    role="region" aria-labelledby="product-producerBtn">
+                    <div class="lo-prodDesc__grid">
+                        <div class="lo-prodDesc-producer">
+                            <div class="lo-prodDesc-producerItem">
+                                <div class="lo-prodDesc-producer__title">Dovozca</div>
+                                <div>BrandLine Group Sp. z o.o.</div>
+                                <div>A. Kręglewskiego 1</div>
+                                <div>61-248 Poznań, Polska</div>
+                            </div>
+                            <div class="lo-prodDesc-producerItem">
+                                <div class="lo-prodDesc-producer__title">Výrobca</div>
+                                <div>FEELLIFE HEALTH INC.</div>
+                                <div>Room 2501, 1903, 2002, Building A, No.9 Furong Road, Tantou</div>
+                                <div>Community, Songgang Subdistrict, Bao'an District, Shenzhen,</div>
+                                <div>518104, Guangdong, P.R. China</div>
+                            </div>
+                            <div class="lo-prodDesc-producerItem">
+                                <div class="lo-prodDesc-producer__title">EU REP</div>
+                                <div>Lotus NL B.V.</div>
+                                <div>Koningin Julianaplein 10, 1e Verd,</div>
+                                <div>2595AA, The Hague, Netherlands</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
 </body>
